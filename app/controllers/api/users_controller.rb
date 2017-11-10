@@ -20,4 +20,15 @@ class Api::UsersController < ApplicationController
         @user = User.find_by_id(user_id)
         render json: @creature 
     end 
-end
+
+    def update 
+        user_id = params[:id]
+
+        @user = User.find_by_id(user_id)
+
+        user_params = params.require(:user).permit(:picture, :name, :favorite_album, :favorite_song, :fan_since)
+        @user.update_attributes(user_params)
+
+        render json: @user
+    end 
+    end
