@@ -22,8 +22,8 @@ class Discography extends Component {
         const albums = this.state.discography.map((album) => {
             return (
                 <div>
-                    <h2>Name: {album.name}</h2>
-                    <p>Description: {album.description}</p>
+                    <img src={album.name}/>
+                    <a href={album.description}>Click Here to Purchase</a>
                 </div>
             )
         })
