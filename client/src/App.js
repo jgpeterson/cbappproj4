@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Creatures from './components/Users'
+import Users from './components/Users'
 
 
 class App extends Component {
