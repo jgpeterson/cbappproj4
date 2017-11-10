@@ -26,7 +26,7 @@ class Users extends Component {
         <h1>Linkin Park Street Team</h1>
         {this.state.users.map(user => (
           <Link key={user._id} to={`/${user._id}`}>
-            <h3>Picture: {user.picture}</h3>
+            <img src={user.picture}/>
             <p>Name: {user.name}</p>
             <p>Favorite Album: {user.favorite_album}</p>
             <p>Favorite Song: {user.favorite_song}</p>
