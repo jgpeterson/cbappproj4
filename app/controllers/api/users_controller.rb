@@ -3,7 +3,7 @@ class Api::UsersController < ApplicationController
     def index
      @users = User.all 
 
-     redner json: @users 
+     render json: @users 
     end 
 
     def create 
@@ -13,6 +13,7 @@ class Api::UsersController < ApplicationController
         if @user.save
             render json: @user 
         end 
+    end
 
     def show 
         user_id = params[:id]

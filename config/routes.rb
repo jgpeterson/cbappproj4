@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     get "/users/:id", to: "users#show", as: "user"
     patch "/users/:id", to: "users#update"
     delete "/users/:id", to: "users#destroy"
+    get "/discography", to: "discography#index", as: "discography"
   end
 end 
