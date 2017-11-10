@@ -31,4 +31,10 @@ class Api::UsersController < ApplicationController
 
         render json: @user
     end 
+
+    private 
+
+    def user_params 
+        params.require(:user).permit(:picture, :name, :favorite_album, :favorite_song, :fan_since)
     end
+end 
