@@ -7,11 +7,4 @@ Rails.application.routes.draw do
     delete "/users/:id", to: "users#destroy"
     get "/discography", to: "discography#index", as: "discography"
   end
-  
-  devise_for :remixes
-  root 'welcome#index'
-
-  resources :remixes, only: [:index, :show] do
-    resources :songs
-  end 
-end 
+end

@@ -7,7 +7,7 @@ class SongsController < ApplicationController
        end 
    
        def create 
-           song_params = params.require(:song).permit(:title, :description)
+           song_params = params.require(:song).permit(:title, :description, :mp3)
            @song = Song.new(song_params)
    
            if @song.save
@@ -27,7 +27,7 @@ class SongsController < ApplicationController
    
            @song = Song.find_by_id(song_id)
    
-           song_params = params.require(:song).permit(:title, :description)
+           song_params = params.require(:song).permit(:title, :description, :mp3)
            @song.update_attributes(song_params)
    
            render json: @song
@@ -47,6 +47,6 @@ class SongsController < ApplicationController
        private 
    
        def song_params 
-           params.require(:song).permit(:title, :description)
+           params.require(:song).permit(:title, :description, :mp3)
        end
    end    

@@ -27,8 +27,9 @@ class Songs extends Component {
         {this.state.songs.map(song => (
           <Link key={song._id} to={`/${song._id}`}>
             <img src={song.picture}/>
-            <p>Title: {song.name}</p>
+            <p>Title: {song.title}</p>
             <p>Description: {song.description}</p>
+            <p>Song: {song.mp3}</p>
           </Link>
         ))}
         <button onClick={this.toggleShowNewForm}>Create New</button>
