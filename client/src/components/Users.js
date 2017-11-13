@@ -16,7 +16,7 @@ text-align: center;
    margin-right: 8px;
    margin-left: 170px;
    border-radius: 50px;
-   padding: 2em;
+   padding: 15em;
    position: relative;
    min-width: 340px;
    max-width:800px;
@@ -42,6 +42,7 @@ class Users extends Component {
 
   render () {
     return (
+    
      <Img>
       <div>
         <h1>Linkin Park Street Team</h1>
