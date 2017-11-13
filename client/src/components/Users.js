@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import NewUserForm from './NewUserForm'
 import styled from 'styled-components'
-
+import Header from './Header'
 
 
 const Img = styled.div`
@@ -42,8 +42,8 @@ class Users extends Component {
 
   render () {
     return (
-    
      <Img>
+     <Header />
       <div>
         <h1>Linkin Park Street Team</h1>
         {this.state.users.map(user => (

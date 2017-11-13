@@ -28,5 +28,9 @@ body {
     height: auto; /*this makes sure to maintain the aspect ratio*/
 }
 
+.bio {
+  text-align: justify;
+  color: white;
+}
 
 
