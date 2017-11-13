@@ -36,6 +36,10 @@ class Users extends Component {
     const res = await axios.get('/api/users')
     this.setState({users: res.data})
   }
+  deleteUser = async (userId) => {        
+    const res = await axios.delete(`/api/users/${userId}`)
+    this.setState({users: res.data})
+  }
   toggleShowNewForm = () => {
     this.setState({showNewForm: !this.state.showNewForm})
   }
@@ -47,7 +51,7 @@ class Users extends Component {
       <div>
         <h1>Linkin Park Street Team</h1>
         {this.state.users.map(user => (
-          <Link key={user._id} to={`/${user._id}`}>
+          <div key={user.id}>
           <div class="photo">
             <img src={user.picture}/>
          </div>
@@ -55,7 +59,8 @@ class Users extends Component {
             <p>Favorite Album: {user.favorite_album}</p>
             <p>Favorite Song: {user.favorite_song}</p>
             <p>Fan Since: {user.fan_since}</p>
-          </Link>
+            <button onClick={() => this.deleteUser(user.id)}>Delete User</button>
+          </div>
         ))}
         <button onClick={this.toggleShowNewForm}>Create New</button>
 

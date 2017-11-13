@@ -39,9 +39,9 @@ class Api::UsersController < ApplicationController
 
         @user.destroy 
 
-        render json: {
-            msg: "Successfully Deleted"
-        }
+        @users = User.all 
+        
+        render json: @users 
     end
 
     private 
