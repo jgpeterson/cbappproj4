@@ -11,6 +11,7 @@ const FlexContainer = styled.div`
     display: flex;
     justify-content: space-between; 
     align: center;
+    background: black;
 `
 const ImgWrapper = styled.img`
 width: 50%;

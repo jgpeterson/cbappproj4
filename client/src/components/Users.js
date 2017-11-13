@@ -49,7 +49,9 @@ class Users extends Component {
      <Img>
      <Header />
       <div>
-        <h1>Linkin Park Street Team</h1>
+    <div class="logo">
+      <img src="https://i.imgur.com/dINfRRP.jpg"/>
+      </div>
         {this.state.users.map(user => (
           <div key={user.id}>
           <div class="photo">
