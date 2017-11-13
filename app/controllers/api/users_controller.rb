@@ -19,7 +19,7 @@ class Api::UsersController < ApplicationController
         user_id = params[:id]
 
         @user = User.find_by_id(user_id)
-        render json: @creature 
+        render json: @user 
     end 
 
     def update 

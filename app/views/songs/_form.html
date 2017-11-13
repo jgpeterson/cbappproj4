@@ -1,0 +1,25 @@
+<%= form_for ([@remix, @song]) do |f| %>
+
+<div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+</div>
+
+<div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+</div>
+
+<div class="field">
+    <%= f.label :song_thumbnail %><br>
+    <%= f.file_field :song_thumbnail %>
+</div>
+
+<div class="field">
+    <%= f.label :mp3 %><br>
+    <%= f.file_field :mp3 %>
+</div>
+
+<%= f.submit class: "button button_highlight butto_block" %>
+
+<% end %>
