@@ -34,6 +34,7 @@ class MainMenu extends Component {
         </Switch>
         </div>
         </Router>
+        
     );
   }
 }

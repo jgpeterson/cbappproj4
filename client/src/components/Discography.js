@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import styled from 'styled-components'
+
+const FlexContainer = styled.div`
+display: inline-block;
+padding: 10px;
+`
 
 class Discography extends Component {
     state = {
@@ -21,10 +27,12 @@ class Discography extends Component {
 
         const albums = this.state.discography.map((album) => {
             return (
-                <div>
+                <FlexContainer>
+                <div class="photo">
                     <img src={album.name}/>
                     <a href={album.description}>Click Here to Purchase</a>
                 </div>
+                </FlexContainer>
             )
         })
 

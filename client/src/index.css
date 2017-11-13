@@ -10,6 +10,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: white;
 
 
 }
@@ -21,3 +22,11 @@ body {
     font-size: 30px;
     color: white;
   }
+
+  .photo img {
+    width: 300px; /*set the width or max-width*/
+    height: auto; /*this makes sure to maintain the aspect ratio*/
+}
+
+
+
