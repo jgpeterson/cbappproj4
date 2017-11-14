@@ -8,7 +8,7 @@ display: center;
 justify-content: space-around;
 text-align: center;
 padding: 150px
-
+float: center;
 `
 
 
