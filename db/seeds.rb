@@ -16,3 +16,22 @@ Discography.create({name: "https://i.imgur.com/7JJIWrB.jpg", description: "https
 Discography.create({name: "https://i.imgur.com/mi0Szry.jpg", description: "https://www.amazon.com/One-More-Light-Linkin-Park/dp/B01MZGQSOT/ref=sr_1_1?s=music&ie=UTF8&qid=1510349713&sr=1-1&keywords=linkin+park+one+more+light"})
 Discography.create({name: "https://i.imgur.com/jYMYTwm.jpg", description: "https://www.amazon.com/Live-Texas-Linkin-Park/dp/B00122BECS/ref=ice_ac_b_dpb?ie=UTF8&qid=1510669987&sr=8-1&keywords=linkin+park+live+in+texas"})
 Discography.create({name: "https://i.imgur.com/D5C3dCT.jpg", description: "https://www.amazon.com/Road-Revolution-Milton-Keynes-Explicit/dp/B001L5D2D0/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1510670028&sr=1-1-mp3-albums-bar-strip-0&keywords=linkin+park+road+to+revolution"})
+
+Song.destroy_all
+
+Song.create({title: "https://www.youtube.com/embed/4qlCC1GOwFw"})
+Song.create({title: "https://www.youtube.com/embed/Gd9OhYroLN0"})
+Song.create({title: "https://www.youtube.com/embed/eVTXPUF4Oz4"})
+Song.create({title: "https://www.youtube.com/embed/zsCD5XCu6CM"})
+Song.create({title: "https://www.youtube.com/embed/kXYiU_JCYtU"})
+Song.create({title: "https://www.youtube.com/embed/v2H4l9RpkwM"})
+Song.create({title: "https://www.youtube.com/embed/8sgycukafqQ"})
+Song.create({title: "https://www.youtube.com/embed/ysSxxIqKNN0"})
+Song.create({title: "https://www.youtube.com/embed/5qF_qbaWt3Q"})
+Song.create({title: "https://www.youtube.com/embed/dxytyRy-O1k"})
+Song.create({title: "https://www.youtube.com/embed/ScNNfyq3d_w"})
+Song.create({title: "https://www.youtube.com/embed/oM-XJD4J36U"})
+Song.create({title: "https://www.youtube.com/embed/5dmQ3QWpy1"})
+Song.create({title: "https://www.youtube.com/embed/lvs68OKOquM"})
+Song.create({title: "https://www.youtube.com/embed/c7ljtgOqS54"})
+Song.create({title: "https://www.youtube.com/embed/1l9RY2Jhyo0"})

@@ -6,5 +6,6 @@ Rails.application.routes.draw do
     patch "/users/:id", to: "users#update"
     delete "/users/:id", to: "users#destroy"
     get "/discography", to: "discography#index", as: "discography"
+    get "/songs", to: "songs#index", as: "songs"
   end
 end

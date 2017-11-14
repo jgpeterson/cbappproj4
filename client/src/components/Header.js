@@ -16,7 +16,7 @@ class Header extends Component {
             <Link to="/discography">Discography</Link>
             </div>
             <div className="item">
-            <Link to="/songs">Remixes</Link>
+            <Link to="/songs">Singles</Link>
             </div>
             </div>
             </div>

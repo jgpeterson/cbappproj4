@@ -1,43 +1,48 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import NewSongForm from './NewSongForm'
+import styled from 'styled-components'
+import Header from './Header'
+
+const FlexContainer = styled.div`
+display: inline-block;
+padding: 10px;
+`
 
 class Songs extends Component {
-  state = {
-    songs: [],
-    showNewForm: false
-  }
-  componentWillMount () {
-    this.getAllSongs()
-  }
+    state = {
+        songs: [],
+       
+    }
 
-  getAllSongs = async () => {
-    const res = await axios.get('/api/songs')
-    this.setState({users: res.data})
-  }
-  toggleShowNewForm = () => {
-    this.setState({showNewForm: !this.state.showNewForm})
-  }
+    componentWillMount() {
+        this.getAllSongs()
+    }
 
-  render () {
-    return (
-      <div>
-        <h1>Remix Playlist</h1>
-        {this.state.songs.map(song => (
-          <Link key={song._id} to={`/${song._id}`}>
-            <img src={song.picture}/>
-            <p>Title: {song.title}</p>
-            <p>Description: {song.description}</p>
-            <p>Song: {song.mp3}</p>
-          </Link>
-        ))}
-        <button onClick={this.toggleShowNewForm}>Create New</button>
+    getAllSongs = async () => {
+        const res = await axios.get('/api/songs')
+        this.setState({ songs: res.data })
+    }
 
-        {this.state.showNewForm ? <NewSongForm getAllSongs={this.getAllSongs}/> : null}
-      </div>
-    )
-  }
+    render() {
+
+        const singles = this.state.songs.map((single) => {
+            return (
+                <FlexContainer>
+                <div class="photo">
+                    <iframe src={single.title}/>
+                </div>
+                </FlexContainer>
+            )
+        })
+
+        return (
+            <div>
+                <Header />
+                {singles}
+            </div>
+        )
+    }
 }
-
-export default Songs
+            
+export default Songs;

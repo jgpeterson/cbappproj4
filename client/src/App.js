@@ -4,6 +4,7 @@ import MainMenu from './components/MainMenu'
 import HomePage from './components/HomePage'
 import Users from './components/Users'
 import Discography from './components/Discography'
+import Songs from './components/Songs'
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
 
         <Route exact path="/user" component={Users} />
         <Route exact path="/discography" component={Discography} />
+        <Route exact path="/songs" component={Songs} />
         </Switch>
         </div>
         </Router>
