@@ -6,7 +6,9 @@ import Header from './Header'
 
 const FlexContainer = styled.div`
 display: inline-block;
-padding: 10px;
+text-align: center;
+padding: 40px;
+margin: 20px;
 `
 
 class Discography extends Component {
@@ -31,7 +33,9 @@ class Discography extends Component {
                 <FlexContainer>
                 <div class="photo">
                     <img src={album.name}/>
+                    <div>
                     <a href={album.description}>Click Here to Purchase</a>
+                    </div>
                 </div>
                 </FlexContainer>
             )
