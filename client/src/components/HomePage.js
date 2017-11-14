@@ -4,11 +4,12 @@ import styled from 'styled-components'
 
 
 const FlexContainer = styled.div`
-display: center;
-justify-content: space-around;
-text-align: center;
-padding: 150px
-float: center;
+display: flex;
+justify-content: center;
+padding: 150px;
+align-items: center;
+height: 100vh;
+flex-direction: column;
 `
 
 
