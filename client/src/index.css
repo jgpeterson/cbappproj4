@@ -27,6 +27,9 @@ body {
     width: 300px; /*set the width or max-width*/
     height: auto; /*this makes sure to maintain the aspect ratio*/
 }
+.create {
+  display: flex;
+}
 
 .bio {
   text-align: justify;

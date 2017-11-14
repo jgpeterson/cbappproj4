@@ -19,7 +19,7 @@ text-align: center;
    padding: 15em;
    position: relative;
    min-width: 340px;
-   max-width:800px;
+   max-width: 850px;
    `
 
 
@@ -64,8 +64,9 @@ class Users extends Component {
             <button onClick={() => this.deleteUser(user.id)}>Delete User</button>
           </div>
         ))}
-        <button onClick={this.toggleShowNewForm}>Create New</button>
-
+        <div class="create">
+        <button onClick={this.toggleShowNewForm}>Create New Soldier</button>
+        </div>
         {this.state.showNewForm ? <NewUserForm getAllUsers={this.getAllUsers}/> : null}
       </div>
       </Img>
