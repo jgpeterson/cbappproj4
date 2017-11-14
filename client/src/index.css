@@ -11,9 +11,28 @@ body {
   justify-content: space-between;
   align-items: center;
   color: white;
-
-
 }
+
+.delete {
+
+  padding: 20px;
+}
+
+button{
+  margin      : 10;
+  padding     : 10;
+  border      : 10;
+  background  : transparent;
+  font-family : inherit;
+  font-size   : 1em;
+  cursor      : pointer;
+}
+
+button::-moz-focus-inner{
+  padding : 0;
+  border  : 0;
+}
+
   .item {
     display: flex;
     flex-direction: row;
@@ -29,6 +48,7 @@ body {
 }
 .create {
   display: flex;
+ 
 }
 
 .bio {
