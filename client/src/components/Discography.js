@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import styled from 'styled-components'
 import Header from './Header'
+
 const FlexContainer = styled.div`
 display: inline-block;
 padding: 10px;
@@ -38,6 +39,7 @@ class Discography extends Component {
 
         return (
             <div>
+                <Header />
                 {albums}
             </div>
         )
