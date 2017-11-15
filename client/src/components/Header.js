@@ -22,6 +22,9 @@ class Header extends Component {
             <div className="item">
             <Link to="/songs">Singles</Link>
             </div>
+            <div className="item">
+            <Link to="/fans">Fans</Link>
+            </div>
             </div>
             </div>
             

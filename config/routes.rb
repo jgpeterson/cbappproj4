@@ -7,5 +7,10 @@ Rails.application.routes.draw do
     delete "/users/:id", to: "users#destroy"
     get "/discography", to: "discography#index", as: "discography"
     get "/songs", to: "songs#index", as: "songs"
+    get "/fans", to: "fans#index", as: "fans"
+    post "/fans", to: "fans#create"
+    get "/fans/:id", to: "fans#show", as: "fan"
+    patch "/fans/:id", to: "fans#update"
+    delete "/fans/:id", to: "fans#destroy"
   end
 end

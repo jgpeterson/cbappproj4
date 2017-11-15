@@ -1,0 +1,2 @@
+class AddPictureToFan < ApplicationRecord
+end
