@@ -18,7 +18,23 @@ body {
   padding: 20px;
 }
 
+a:link {
+  color: red;
+}
 
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: gray;
+}
 
 button{
   margin      : 10;

@@ -8,8 +8,9 @@ display: flex;
 justify-content: center;
 padding: 150px;
 align-items: center;
-height: 100vh;
+height: 50vh;
 flex-direction: column;
+
 `
 
 
@@ -22,9 +23,10 @@ class HomePage extends Component {
                 <iframe width="420" height="315"
             src="https://www.youtube.com/embed/Tm8LGxTLtQk">
                 </iframe>
+                <Link to="/MainMenu">
                 <div class="enter">
-                <Link to="/MainMenu">Click to Enter</Link>
-                </div>
+                    <button>Click to Enter</button></div></Link>
+                
             </FlexContainer>
         
 
