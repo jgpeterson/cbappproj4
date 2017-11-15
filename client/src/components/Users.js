@@ -22,7 +22,7 @@ text-align: center;
    `
 
 const Back = styled.div`
-background-image: url("https://i.imgur.com/4CeA3zO.jpg");
+background-image: url("https://i.imgur.com/HENGDhO.jpg");
 
 
 `
