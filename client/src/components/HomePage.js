@@ -5,12 +5,12 @@ import styled from 'styled-components'
 
 const FlexContainer = styled.div`
 display: flex;
-justify-content: center;
+justify-content: space-between;
 padding: 150px;
 align-items: center;
 height: 50vh;
 flex-direction: column;
-
+text-align: center;
 `
 
 
@@ -23,9 +23,7 @@ class HomePage extends Component {
                 <iframe width="420" height="315"
             src="https://www.youtube.com/embed/Tm8LGxTLtQk">
                 </iframe>
-                <Link to="/MainMenu">
-                <div class="enter">
-                    <button>Click to Enter</button></div></Link>
+                <Link to="/MainMenu">ENTER</Link>
                 
             </FlexContainer>
         
