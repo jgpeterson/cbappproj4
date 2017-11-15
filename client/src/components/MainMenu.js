@@ -14,9 +14,9 @@ const FlexContainer = styled.div`
     background: black;
 `
 const ImgWrapper = styled.img`
-width: 50%;
+width: 45%;
 margin: 15px;
-height: 50%;
+height: 60%;
 `
 class MainMenu extends Component {
   render() {
@@ -30,7 +30,7 @@ Bennington first gained prominence as a vocalist following the release of Linkin
 
 Bennington formed his own band, Dead by Sunrise, as a side project in 2005. The band's debut album, Out of Ashes, was released on October 13, 2009. He became the lead singer of Stone Temple Pilots in 2013 to release the EP High Rise on October 8, 2013, via their own record label, Play Pen, but left in 2015 to focus solely on Linkin Park. He was widely regarded as one of the top rock vocalists of the 2000s. Hit Parader magazine placed him at #46 on their list of the "100 Metal Vocalists of All Time". He also appeared in cameo roles in several films, including Crank, Crank: High Voltage and Saw 3D.
 
-On July 20, 2017, Bennington was found dead at his home in Palos Verdes Estates, California, having committed suicide by hanging.<iframe width="560" height="315" src="https://www.youtube.com/embed/CgwL14IDDJY" frameborder="0" allowfullscreen></iframe></p>
+On July 20, 2017, Bennington was found dead at his home in Palos Verdes Estates, California, having committed suicide by hanging.<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/CgwL14IDDJY" frameborder="0" allowfullscreen></iframe></div></p>
    
     <ImgWrapper src="https://i.imgur.com/NyG8ZJV.jpg"/>
 

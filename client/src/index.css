@@ -35,7 +35,7 @@ button::-moz-focus-inner{
   border  : 0;
 }
 
-  .item {
+.item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,7 +44,7 @@ button::-moz-focus-inner{
     color: white;
   }
 
-  .photo img {
+.photo img {
     width: 300px; /*set the width or max-width*/
     height: auto; /*this makes sure to maintain the aspect ratio*/
 }
@@ -62,5 +62,10 @@ button::-moz-focus-inner{
 .logo img {
   width: 800px;
   height: 200px;
+  padding: 20px;
+}
+
+.video {
+  padding: 20px;
 }
 
