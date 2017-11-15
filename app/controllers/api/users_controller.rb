@@ -7,8 +7,7 @@ class Api::UsersController < ApplicationController
     end 
 
     def create 
-        user_params = params.require(:user).permit(:picture, :name, :favorite_album, :favorite_song, :fan_since)
-        @user = User.new(user_params)
+        @user = User.create(user_params)
 
         if @user.save
             render json: @user 
@@ -47,6 +46,6 @@ class Api::UsersController < ApplicationController
     private 
 
     def user_params 
-        params.require(:user).permit(:picture, :name, :favorite_album, :favorite_song, :fan_since)
+        params.require(:user).permit(:picture, :name, :favorite_album, :favorite_song, :fan_since, :profile_picture)
     end
 end 

@@ -7,7 +7,8 @@ class NewUserForm extends Component {
     name: '',
     favorite_album: '',
     favorite_song: '',
-    fan_since: ''
+    fan_since: '',
+    profile_picture: {}
   }
 
   handleChange = (event) => {
@@ -17,11 +18,31 @@ class NewUserForm extends Component {
     this.setState(newState)
   }
 
+//   changeFile = (e) => {
+//     var reader = new FileReader();
+//     var file = e.currentTarget.files[0];
+//     var that = this;
+
+//     reader.onloadend = function() {
+//       that.setState({ profile_picture: reader.result, imageFile: file });
+//     }
+
+//     if (file) {
+//       reader.readAsDataURL(file);
+//     } else {
+//       this.setState({ profile_picture: "", imageFile: null });
+//     }
+//   }
+
+
   handleSubmit = async (event) => {
     event.preventDefault()
     const payload = {
       name: this.state.name,
-      description: this.state.description
+      favorite_album: this.state.favorite_album,
+      favorite_song: this.state.favorite_song, 
+      fan_since: this.state.fan_since,
+      profile_picture: this.state.profile_picture
     }
     await axios.post('/api/users', payload)
     await this.props.getAllUsers()
@@ -45,6 +66,10 @@ class NewUserForm extends Component {
         <div>
           <label htmlFor="fan_since">Fan Since: </label>
           <input onChange={this.handleChange} type="text" name="fan_since" value={this.state.fan_since}/>
+        </div>
+        <div>
+            <label htmlfor ="profile_picture" /> 
+            <input type ="file" onChange={this.changeFile} name="profile_picture" value={this.state.profile_picture} />
         </div>
         <button>Submit</button>
       </form>

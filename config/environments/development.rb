@@ -12,6 +12,17 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
 
+
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_credentials: {
+      bucket: ENV['AWS_S3_BUCKET'],
+      access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+      secret_access_key: ENV['AWS_SECRET_ACCESS_KEY_ID'],
+      s3_region: ENV['AWS_REGION']
+  }
+}
+
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?
     config.action_controller.perform_caching = true
