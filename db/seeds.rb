@@ -41,4 +41,5 @@ Song.create({title: "https://www.youtube.com/embed/1l9RY2Jhyo0"})
 Fan.destroy_all
 
 
-Fan.create({title: "https://i.imgur.com/CQWbnMi.jpg", description: "Me at the LP show at House of Blues 2001."})
+Fan.create({picture: "https://i.imgur.com/CQWbnMi.jpg", description: "Me at the LP show at House of Blues 2001."})
+Fan.create({picture: "https://i.imgur.com/EyLHXJm.jpg", description: "Chester Bennington live at Top Of The Pops 2001"})

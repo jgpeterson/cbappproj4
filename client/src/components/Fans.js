@@ -35,8 +35,9 @@ class Fans extends Component {
          return ( <div key={fan.id}>
          <div>
             <img src={fan.picture}/>
+            <div class="name">
             <p>Description: {fan.description}</p>
-            
+            </div>
             <div>
             <button onClick={() => this.deleteFan(fan.id)}>Delete Post</button>
             </div>
