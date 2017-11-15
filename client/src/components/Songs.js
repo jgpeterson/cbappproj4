@@ -8,7 +8,6 @@ const FlexContainer = styled.div`
 display: inline-block;
 padding: 30px;
 margin: 25px;
-
 `
 
 class Songs extends Component {

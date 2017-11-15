@@ -10,8 +10,7 @@ const Img = styled.div`
 text-align: center;
    display: inline-block;
    width:85%;
-   background: white;
-   border: 1px solid #B9D6C2 ;
+   
    margin-bottom: 8px;
    margin-right: 8px;
    margin-left: 170px;
@@ -21,6 +20,12 @@ text-align: center;
    min-width: 340px;
    max-width: 850px;
    `
+
+const Back = styled.div`
+background-image: url("https://i.imgur.com/4CeA3zO.jpg");
+
+
+`
 
 
 class Users extends Component {
@@ -46,6 +51,7 @@ class Users extends Component {
 
   render () {
     return (
+    <Back>
      <Img>
      <Header />
       <div>
@@ -57,12 +63,14 @@ class Users extends Component {
           <div class="photo">
             <img src={user.profile_picture}/>
          </div>
+         <div class="info">
             <p>Name: {user.name}</p>
             <p>Favorite Album: {user.favorite_album}</p>
             <p>Favorite Song: {user.favorite_song}</p>
             <p>Fan Since: {user.fan_since}</p>
             <div class="delete">
             <button onClick={() => this.deleteUser(user.id)}>Delete User</button>
+            </div>
             </div>
           </div>
         ))}
@@ -72,6 +80,7 @@ class Users extends Component {
         {this.state.showNewForm ? <NewUserForm getAllUsers={this.getAllUsers}/> : null}
       </div>
       </Img>
+      </Back>
     )
   }
 }

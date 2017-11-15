@@ -14,7 +14,7 @@ body {
 }
 
 .delete {
-
+ color: white;
   padding: 20px;
 }
 
@@ -28,6 +28,7 @@ button{
   font-family : inherit;
   font-size   : 1em;
   cursor      : pointer;
+  color: white;
 }
 
 button::-moz-focus-inner{
@@ -51,6 +52,10 @@ button::-moz-focus-inner{
 .create {
   display: flex;
  
+}
+
+.info {
+  color: white;
 }
 
 .bio {
