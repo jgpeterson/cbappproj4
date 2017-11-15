@@ -12,6 +12,7 @@ const FlexContainer = styled.div`
     justify-content: space-between; 
     align: center;
     background: black;
+    padding: 15px;
 `
 const ImgWrapper = styled.img`
 width: 45%;
