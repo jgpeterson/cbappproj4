@@ -6,7 +6,9 @@ import Header from './Header'
 
 const FlexContainer = styled.div`
 display: inline-block;
-padding: 10px;
+padding: 30px;
+margin: 25px;
+
 `
 
 class Songs extends Component {

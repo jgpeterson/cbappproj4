@@ -55,7 +55,7 @@ class Users extends Component {
         {this.state.users.map(user => (
           <div key={user.id}>
           <div class="photo">
-            <img src={user.picture}/>
+            <img src={user.profile_picture}/>
          </div>
             <p>Name: {user.name}</p>
             <p>Favorite Album: {user.favorite_album}</p>
