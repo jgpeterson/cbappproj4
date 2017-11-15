@@ -65,23 +65,23 @@ class NewUserForm extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit} encType="multipart/form-data">
-                <div>
+                <div class="new">
                     <label htmlFor="name">Name: </label>
                     <input onChange={this.handleChange} type="text" name="name" value={this.state.name} />
                 </div>
-                <div>
+                <div class="new">
                     <label htmlFor="favorite_album">Favorite Album: </label>
                     <input onChange={this.handleChange} type="text" name="favorite_album" value={this.state.favorite_album} />
                 </div>
-                <div>
+                <div class="new">
                     <label htmlFor="favorite_song">Favorite Song: </label>
                     <input onChange={this.handleChange} type="text" name="favorite_song" value={this.state.favorite_song} />
                 </div>
-                <div>
+                <div class="new">
                     <label htmlFor="fan_since">Fan Since: </label>
                     <input onChange={this.handleChange} type="text" name="fan_since" value={this.state.fan_since} />
                 </div>
-                <div onClick={this.uploadWidget}>Upload Profile Pic</div>
+                <div onClick={this.uploadWidget}><button>Upload Profile Pic</button></div>
                 {/* <DropZone onDrop={this.handleDrop}>
                     <p>Click or Drag an image to upload</p>
                 </DropZone> */}
