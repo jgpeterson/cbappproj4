@@ -34,9 +34,9 @@ class Fans extends Component {
                {this.state.fans.map((fan) => {
          return ( <div key={fan.id}>
          <div>
-            <img src={fan.title}/>
+            <img src={fan.picture}/>
             <p>Description: {fan.description}</p>
-          
+            
             <div>
             <button onClick={() => this.deleteFan(fan.id)}>Delete Post</button>
             </div>
