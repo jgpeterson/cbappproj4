@@ -53,6 +53,12 @@ button::-moz-focus-inner{
   border  : 0;
 }
 
+.banner img {
+  margin-left: -50%;
+  margin-top: -20%;
+
+}
+
 .name {
   color: white;
 }
