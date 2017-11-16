@@ -59,6 +59,10 @@ button::-moz-focus-inner{
 
 }
 
+.fanphoto {
+  padding: 90px;
+}
+
 .name {
   color: white;
 }
