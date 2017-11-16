@@ -67,9 +67,11 @@ button::-moz-focus-inner{
   }
 
 .photo img {
-    width: 300px; /*set the width or max-width*/
-    height: auto; /*this makes sure to maintain the aspect ratio*/
+    width: 300px; 
+    height: auto; 
 }
+
+
 .create {
   display: flex;
  

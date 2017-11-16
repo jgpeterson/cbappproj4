@@ -52,7 +52,7 @@ class Fans extends Component {
                 <Header />
                {this.state.fans.map((fan) => {
          return ( <div key={fan.id}>
-         <div>
+         <div class="fanphoto">
             <img src={fan.picture}/>
             <p>Description: {fan.description}</p>
             
