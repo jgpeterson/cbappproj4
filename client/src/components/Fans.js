@@ -56,7 +56,7 @@ class Fans extends Component {
 
             <div class="name">
                 <div class="banner">
-                <img src="https://i.imgur.com/yJjO1iw.jpg"/>
+                <img src="https://i.imgur.com/nRryQNF.jpg"/>
                 </div>
                {this.state.fans.map((fan) => {
          return ( <div key={fan.id}>
