@@ -12,7 +12,6 @@ const Img = styled.div`
 text-align: center;
    display: inline-block;
    width:85%;
-   
    margin-bottom: 8px;
    margin-right: 8px;
    margin-left: 170px;
@@ -21,6 +20,10 @@ text-align: center;
    position: relative;
    min-width: 340px;
    max-width: 850px;
+   `
+
+   const Back = styled.div`
+   background: black;
    `
 
 class Fans extends Component {
@@ -47,6 +50,7 @@ class Fans extends Component {
     
     render() {
         return (
+            <Back>
             <Img>
             <div class="name">
                 <Header />
@@ -68,6 +72,7 @@ class Fans extends Component {
         {this.state.showNewForm ? <NewFanForm getAllFans={this.getAllFans}/> : null} 
             </div>
             </Img>
+            </Back>
         );
     }
 }
