@@ -42,4 +42,7 @@ Fan.destroy_all
 
 
 Fan.create({picture: "https://i.imgur.com/CQWbnMi.jpg", description: "Me at the LP show at House of Blues 2001."})
-Fan.create({picture: "https://i.imgur.com/EyLHXJm.jpg", description: "Chester Bennington live at Top Of The Pops 2001"})
+Fan.create({picture: "https://i.imgur.com/EyLHXJm.jpg", description: "Chester Bennington live at Top Of The Pops 2001."})
+Fan.create({picture: "https://i.imgur.com/mlVqfu3.jpg", description: "Pencil drawing I did of Chester. Loved the show he did last week. Cant wait to see the band again!"})
+Fan.create({picture: "https://i.imgur.com/sP3X6bN.jpg", description: "Drawing of Chester and the band performing In The End."})
+Fan.create({picture: "https://i.imgur.com/cxxvIWo.jpg", description: "This drawing took me forever to male and get right but I am so satisfied!! I Love You, Chester!!!"})
