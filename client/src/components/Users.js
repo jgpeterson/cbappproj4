@@ -65,10 +65,12 @@ class Users extends Component {
             <img src={user.profile_picture}/>
          </div>
          <div class="info">
+         <div class="favorite">
             <p>Name: {user.name}</p>
             <p>Favorite Album: {user.favorite_album}</p>
             <p>Favorite Song: {user.favorite_song}</p>
             <p>Fan Since: {user.fan_since}</p>
+            </div>
             <div class="delete">
             <button onClick={() => this.deleteUser(user.id)}>Delete Soldier</button>
             </div>
