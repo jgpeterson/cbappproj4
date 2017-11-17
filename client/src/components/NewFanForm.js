@@ -54,6 +54,12 @@ class NewFanForm extends Component {
             picture: this.state.picture
         }
         await axios.post('/api/fans', payload)
+        await this.setState({
+            name: "",
+        title: "",
+        description: "",
+        picture: ""
+    })
         await this.props.getAllFans()
     }
 
