@@ -22,7 +22,7 @@ class HomePage extends Component {
                 <iframe width="420" height="315"
             src="https://www.youtube.com/embed/Tm8LGxTLtQk">
                 </iframe>
-                <Link to="/MainMenu">ENTER</Link>
+               <button><Link to="/MainMenu">ENTER</Link></button>
                 
             </FlexContainer>
         

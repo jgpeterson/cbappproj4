@@ -79,8 +79,13 @@ button::-moz-focus-inner{
 .photo img {
     width: 300px; 
     height: auto; 
+    padding: 20px;
 }
 
+.stuff {
+  display: flex;
+  
+}
 
 .create {
   display: flex;
@@ -89,6 +94,7 @@ button::-moz-focus-inner{
 
 .info {
   color: white;
+  padding: 30px;
 }
 
 .new {

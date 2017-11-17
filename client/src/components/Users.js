@@ -7,10 +7,11 @@ import Header from './Header'
 
 
 const Img = styled.div`
-text-align: center;
+   text-align: center;
    display: inline-block;
-   width:85%;
-   
+   width: 85%;
+   background: rgba(0, 0, 0, 0.5);
+   border: 1px solid;
    margin-bottom: 8px;
    margin-right: 8px;
    margin-left: 170px;
@@ -59,7 +60,7 @@ class Users extends Component {
       <img src="https://i.imgur.com/dINfRRP.jpg"/>
       </div>
         {this.state.users.map(user => (
-          <div key={user.id}>
+          <div class="stuff" key={user.id}>
           <div class="photo">
             <img src={user.profile_picture}/>
          </div>
