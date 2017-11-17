@@ -6,7 +6,7 @@ class Api::FansController < ApplicationController
     end 
    
     def create 
-        @Fan = Fan.create(fan_params)
+        @fan = Fan.create(fan_params)
 
         if @fan.save
             render json: @fan 
