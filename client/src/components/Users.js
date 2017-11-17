@@ -69,7 +69,7 @@ class Users extends Component {
             <p>Favorite Song: {user.favorite_song}</p>
             <p>Fan Since: {user.fan_since}</p>
             <div class="delete">
-            <button onClick={() => this.deleteUser(user.id)}>Delete User</button>
+            <button onClick={() => this.deleteUser(user.id)}>Delete Soldier</button>
             </div>
             </div>
           </div>
