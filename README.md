@@ -10,7 +10,9 @@ HTML5 CSS Ruby React Heroku (used to deploy the finalized working app)
 
 FEATURES: Videos for each single presented. Cover art of each album presented with a clickable link below that allows you to buy/stream album selected.
 
-Wire Frames and ERDs: 
+Wire Frames and ERDs: https://trello.com/b/WLRRxWKT/chester-bennington-fan-site-proj4
+https://i.imgur.com/TWF3nRT.jpg
+https://i.imgur.com/lgkDMG2.jpg?1
 
 LINKS USED FOR Chester Bennington Bio: https://en.wikipedia.org/wiki/Chester_Bennington
 
