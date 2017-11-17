@@ -45,6 +45,6 @@ Fan.create({picture: "https://i.imgur.com/CQWbnMi.jpg", description: "Me at the 
 Fan.create({picture: "https://i.imgur.com/EyLHXJm.jpg", description: "Chester Bennington live at Top Of The Pops 2001."})
 Fan.create({picture: "https://i.imgur.com/mlVqfu3.jpg", description: "Pencil drawing I did of Chester. Loved the show he did last week. Cant wait to see the band again!"})
 Fan.create({picture: "https://i.imgur.com/sP3X6bN.jpg", description: "Drawing of Chester and the band performing In The End."})
-Fan.create({picture: "https://i.imgur.com/cxxvIWo.jpg", description: "This drawing took me forever to male and get right but I am so satisfied!! I Love You, Chester!!!"})
+Fan.create({picture: "https://i.imgur.com/cxxvIWo.jpg", description: "This drawing took me forever to make and get right but I am so satisfied!! I Love You, Chester!!!"})
 Fan.create({picture: "https://i.imgur.com/wuQtThN.jpg", description: "Artwork I drew in honor of Chester. You changed my life, Chester Bennington. You will forever be in our heaerts. We love you. Rest In Peace."})
 Fan.create({picture: "https://i.imgur.com/QKW4VM5.jpg", description: "'Who Cares If One More Light Goes Out?' We all do, Chester. We miss you every day."})
