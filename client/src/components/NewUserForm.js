@@ -58,7 +58,16 @@ class NewUserForm extends Component {
             fan_since: this.state.fan_since,
             profile_picture: this.state.profile_picture
         }
+
+
         await axios.post('/api/users', payload)
+        await this.setState({
+            name: "",
+        favorite_album: "",
+        favorite_song: "",
+        fan_since: "",
+        profile_picture: ""
+    })
         await this.props.getAllUsers()
     }
 
