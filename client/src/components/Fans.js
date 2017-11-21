@@ -24,6 +24,25 @@ text-align: center;
 
    const Back = styled.div`
    background: black;
+
+   @media screen and (max-width:450px) {
+    .name img {
+        font-size: 1.25rem;
+        max-width: 400px;
+    }
+
+    @media screen and (max-width:450px) {
+        .fanphoto img {
+            max-width: 150px;
+            
+        }
+    @media screen and (max-width:450px) {
+        .des {
+            font-size: 10px;
+        }
+    }
+    }
+   }
    `
 
 class Fans extends Component {
@@ -62,7 +81,7 @@ class Fans extends Component {
          return ( <div key={fan.id}>
          <div class="fanphoto">
             <img src={fan.picture}/>
-            <p>Description: {fan.description}</p>
+            <p class="des">Description: {fan.description}</p>
             
             <div>
             <button onClick={() => this.deleteFan(fan.id)}>Delete Post</button>

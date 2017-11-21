@@ -20,11 +20,21 @@ width: 45%;
 margin: 15px;
 height: 60%;
 `
+
+const Bar = styled.div `
+@media screen and (max-width:450px) {
+  .bio {
+      font-size: 10px;
+  }
+
+ }
+`
 class MainMenu extends Component {
   render() {
     return (
       <div>
     <Header />
+    <Bar>
     <FlexContainer>
     <p class="bio">Chester Charles Bennington (March 20, 1976 – July 20, 2017) was an American singer, songwriter, and actor. He was best known as the lead singer for the rock band Linkin Park, and also served as the frontman for Dead by Sunrise and Stone Temple Pilots.
 
@@ -37,6 +47,7 @@ On July 20, 2017, Bennington was found dead at his home in Palos Verdes Estates,
     <ImgWrapper src="https://i.imgur.com/NyG8ZJV.jpg"/>
 
     </FlexContainer>
+    </Bar>
     </div>
     );
   }

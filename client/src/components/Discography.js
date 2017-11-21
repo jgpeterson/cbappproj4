@@ -9,6 +9,13 @@ display: inline-block;
 text-align: center;
 padding: 40px;
 margin: 20px;
+
+@media screen and (max-width:450px) {
+    .photo img {
+        font-size: 1.25rem;
+        max-width: 200px;
+    }
+   }
 `
 
 class Discography extends Component {
