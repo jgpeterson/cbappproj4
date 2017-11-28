@@ -45,7 +45,7 @@ background-image: url("https://i.imgur.com/e9Yki5E.jpg");
 
   @media screen and (max-width:450px) {
     .container {
-      margin-left: -120%;
+      margin-left: -115%;
       display: block;
       width: 60px;
     }
@@ -58,26 +58,27 @@ background-image: url("https://i.imgur.com/e9Yki5E.jpg");
       }
   @media screen and (max-width:450px) {
       .favorite {
-          font-size: 10px;
-          margin-left: -330%;
-      
+          font-size: 7px;
+          margin-left: -340%;
+          width: 50%;
       }
   }
 
   @media screen and (max-width:450px) {
 
     .photo {
-      max-width: 300px;
+      max-width: 250px;
     }
   @media screen and (max-width:450px) {
     .delete {
-      margin-left: -350%;
+      margin-left: -370%;
+      width: 15%;
     }
 
   @media screen and (max-width:450px) {
     .create {
       margin-left: -120%;
-      width: 40%;
+      width: 20%;
     }
   }
 

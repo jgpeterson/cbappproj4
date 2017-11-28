@@ -4,6 +4,21 @@ import DropZone from 'react-dropzone'
 import styled from 'styled-components'
 
 
+const Create = styled.div`
+@media screen and (max-width:450px) {
+     .new {
+        font-size: 10px;
+        margin-left: -190%;
+        color: black;
+    }
+
+    .upload {
+        margin-left: -190%;
+        color: black;
+    }
+}
+
+`
 class NewUserForm extends Component {
     state = {
         picture: '',
@@ -75,7 +90,7 @@ class NewUserForm extends Component {
 
     render() {
         return (
-            
+            <Create>
             <form onSubmit={this.handleSubmit} encType="multipart/form-data">
                 <div class="new">
                     <label htmlFor="name">Name: </label>
@@ -93,6 +108,7 @@ class NewUserForm extends Component {
                     <label htmlFor="fan_since">Fan Since: </label>
                     <input onChange={this.handleChange} type="text" name="fan_since" value={this.state.fan_since} />
                 </div>
+                <div class="upload">
                 <div onClick={this.uploadWidget}><button>Upload Profile Pic</button></div>
                 {/* <DropZone onDrop={this.handleDrop}>
                     <p>Click or Drag an image to upload</p>
@@ -102,8 +118,9 @@ class NewUserForm extends Component {
                     <input type="file" onChange={this.changeFile} name="profile_picture" value={this.state.profile_picture} />
                 </div> */}
                 <button>Submit</button>
+            </div>
             </form>
-             
+            </Create>
         )
     }
 }
