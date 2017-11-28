@@ -35,6 +35,10 @@ text-align: center;
         
     }
 
+    .del {
+        margin-left: -350%;
+    }
+
     @media screen and (max-width:450px) {
         .fanphoto img {
             max-width: 150px;
@@ -92,7 +96,7 @@ class Fans extends Component {
             <FanPost>
             <p class="des">Description: {fan.description}</p>
             </FanPost>
-            <div>
+            <div class="del">
             <button onClick={() => this.deleteFan(fan.id)}>Delete Post</button>
             </div>
             </div>
