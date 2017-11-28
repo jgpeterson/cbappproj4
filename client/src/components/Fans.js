@@ -31,22 +31,26 @@ text-align: center;
         max-width: 800px;
         justify-content: space-between;
         align: center;
-        margin-left: -40%;
+        margin-left: -200%;
         
     }
 
     @media screen and (max-width:450px) {
         .fanphoto img {
             max-width: 150px;
-            
+            margin-left: -600%;
         }
-    @media screen and (max-width:450px) {
-        .des {
-            font-size: 10px;
+    
         }
+`
+   const FanPost = styled.div `
+   @media screen and (max-width:450px) {
+    .des {
+        font-size: 10px;
+        width: 60%;
+        margin-left: -300%; 
+        
     }
-    }
-   }
    `
 
 class Fans extends Component {
@@ -85,8 +89,9 @@ class Fans extends Component {
          return ( <div key={fan.id}>
          <div class="fanphoto">
             <img src={fan.picture}/>
+            <FanPost>
             <p class="des">Description: {fan.description}</p>
-            
+            </FanPost>
             <div>
             <button onClick={() => this.deleteFan(fan.id)}>Delete Post</button>
             </div>
