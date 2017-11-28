@@ -20,12 +20,59 @@ const Img = styled.div`
    position: relative;
    min-width: 340px;
    max-width: 850px;
+
+   @media screen and (max-width:450px) {
+    .logo img {
+        font-size: 1.25rem;
+        max-width: 700px;
+    }
    `
 
 const Back = styled.div`
 background-image: url("https://i.imgur.com/e9Yki5E.jpg");
 
 
+@media screen and (max-width:450px) {
+  .logo img {
+      font-size: 1.25rem;
+      max-width: 500px;
+      margin-left: -200%;
+  }
+
+  @media screen and (max-width:450px) {
+    .nav {
+      margin-left: -110%;
+      display: flex;
+      justifuy-content: space-between;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+      .stuff img {
+          max-width: 150px;
+          margin-left: -450%;
+      }
+  @media screen and (max-width:450px) {
+      .favorite {
+          font-size: 10px;
+          margin-left: -330%;
+      
+      }
+  }
+
+  @media screen and (max-width:450px) {
+
+    .photo {
+      max-width: 300px;
+    }
+  @media screen and (max-width:450px) {
+    .delete {
+      margin-left: -350%;
+    }
+  }
+  }
+  }
+ }
 `
 
 
@@ -54,7 +101,9 @@ class Users extends Component {
     return (
     <Back>
      <Img>
+     <div class="nav">
      <Header />
+     </div>
       <div>
     <div class="logo">
       <img src="https://i.imgur.com/dINfRRP.jpg"/>

@@ -26,9 +26,13 @@ text-align: center;
    background: black;
 
    @media screen and (max-width:450px) {
-    .name img {
+    .banner img {
         font-size: 1.25rem;
-        max-width: 400px;
+        max-width: 800px;
+        justify-content: space-between;
+        align: center;
+        margin-left: -40%;
+        
     }
 
     @media screen and (max-width:450px) {

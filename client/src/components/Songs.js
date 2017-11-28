@@ -8,6 +8,13 @@ const FlexContainer = styled.div`
 display: inline-block;
 padding: 30px;
 margin: 25px;
+
+@media screen and (max-width:450px) {
+    .photo img {
+        font-size: 1.25rem;
+        max-width: 200px;
+    }
+   }
 `
 
 class Songs extends Component {
