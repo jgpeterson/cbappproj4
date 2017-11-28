@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import DropZone from 'react-dropzone'
+import styled from 'styled-components'
+
 
 class NewUserForm extends Component {
     state = {
@@ -73,6 +75,7 @@ class NewUserForm extends Component {
 
     render() {
         return (
+            
             <form onSubmit={this.handleSubmit} encType="multipart/form-data">
                 <div class="new">
                     <label htmlFor="name">Name: </label>
@@ -100,6 +103,7 @@ class NewUserForm extends Component {
                 </div> */}
                 <button>Submit</button>
             </form>
+             
         )
     }
 }

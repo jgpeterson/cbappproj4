@@ -73,6 +73,14 @@ background-image: url("https://i.imgur.com/e9Yki5E.jpg");
     .delete {
       margin-left: -350%;
     }
+
+  @media screen and (max-width:450px) {
+    .create {
+      margin-left: -120%;
+      width: 40%;
+    }
+  }
+
   }
   }
   }

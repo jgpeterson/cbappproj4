@@ -25,6 +25,10 @@ const Bar = styled.div `
 @media screen and (max-width:450px) {
   .bio {
       font-size: 10px;
+      width: 60%;
+  }
+  .video {
+    margin-left: -20px;
   }
 
  }
