@@ -26,6 +26,10 @@ const Img = styled.div`
         font-size: 1.25rem;
         max-width: 700px;
     }
+
+    @media screen and (max-width:450px) {
+      background: none;
+    }
    `
 
 const Back = styled.div`
@@ -40,10 +44,10 @@ background-image: url("https://i.imgur.com/e9Yki5E.jpg");
   }
 
   @media screen and (max-width:450px) {
-    .nav {
-      margin-left: -110%;
-      display: flex;
-      justifuy-content: space-between;
+    .container {
+      margin-left: -120%;
+      display: block;
+      width: 60px;
     }
   }
 
