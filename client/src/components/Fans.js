@@ -39,6 +39,11 @@ text-align: center;
         margin-left: -350%;
     }
 
+    .par {
+        margin-left: -286%;
+    }
+
+
     @media screen and (max-width:450px) {
         .fanphoto img {
             max-width: 150px;
@@ -102,7 +107,7 @@ class Fans extends Component {
             </div>
          </div> )
                })}
-        <div>
+        <div class="par">
         <button onClick={this.toggleShowNewForm}>Create New Post</button>
         </div>
         {this.state.showNewForm ? <NewFanForm getAllFans={this.getAllFans}/> : null} 
